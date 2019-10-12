@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/rensyuu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img src="./img/ippon.jpeg" alt="ippon" width="100%" height="672px">
+        <button id="start_bth">スタート</button>
+    </div>
+
+    <div class="reidai">
+        <div id="random"></div>
+        <h1>写真に合う、一言を入れてください</h1>
+    </div>
+
+    <div class="nyuyroku">
+        <input id="bokeru" type="text">
+        <button id="saiten">採点</button>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            const img = ["<img src='./img/baby.jpg'>", "<img src='./img/handpower.jpeg'>", "<img src='./img/oyayubi.jpeg'>", "<img src='./img/tetsuya.jpg'>"];
+
+            $("#start_bth").on("click", function () {
+                //スタートをクリックしてイベントかいし
+                let rand = Math.floor(Math.random() * 4);
+                $("#random").html(img[rand]);
+                //画像をランダムで表示
+            });
+        });
+
+        $()function() {
+            const tensuu = new Array(100);
+
+            $("#saiten").on("click", function ()){
+                let ten = Math.floor(Math.random() * 100);
+                $()
+
+            }
+
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
